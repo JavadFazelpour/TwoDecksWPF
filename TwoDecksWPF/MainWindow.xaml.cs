@@ -65,7 +65,7 @@ namespace TwoDecksWPF
 
         private void leftDeckListBox_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Enter) MoveCard(true);
         }
 
         private void leftDeckListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -80,7 +80,7 @@ namespace TwoDecksWPF
 
         private void rightDeckListBox_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Key == Key.Enter) MoveCard(false);
         }
     }
 }
